@@ -1,0 +1,79 @@
+	Main features:
+Adds the Israelite religious group to After the End, with Orthodox Judaism as the mainstream version of Judaism and Reform Judaism as a heresy. Credit to User:Gilgamesh for the Star of David used in the religion icons
+Adds two new cultures: Yiddish and Neoladino
+Reactivates Jewish courtier and physician events from vanilla CK2
+Certain non-Jewish rulers can expel the Jews, giving them a lump sum of gold and the Arbitrary trait
+Changes culture and religion of six provinces in New York, New Jersey, and Florida. All six provinces are now Yiddish. Five of these provinces are also Orthodox while one is Reform - Palm Beach in Florida.
+Adds five Jewish playable characters - 2 Orthodox characters in the Northeast, 2 Reform characters in Florida, and one additional "secret" character.
+Jewish characters can become bankers without any additional requirements
+New Yeshiva can be built (Third Temple equivalent). The New Yeshiva can be built by a king or emperor-tier independent Jewish ruler with complete control over Manhattan and Brooklyn. Both counties must also be Jewish.
+Jewish religious head added - the Grand Rebbe. The Grand Rebbe can be created at a cost of 1000 piety once the New Yeshiva is built.
+
+v0.1a:
+Bugfixes:
+Game breaking synax bug in rip_physician_events.txt is fixed.
+Fixed bug where all lowborns were part of the Meir dynasty
+
+Changes:
+Temple holding of Brooklyn is now Williamsburg
+New localization for Passover event (3,000 years instead of 2,000)
+
+v0.2:
+
+Bugfixes:
+The Grand Rabbinate is no longer a Republic
+CoA issues for both rulers and titles should be fixed
+Graphical issues related to religious icons should be fixed
+Sympathy for Judaism trait added (somehow forgot to do that earlier)
+
+Changes:
+Localization has been improved across the board - no more mispelled decisions and awkward wording. Jewish Kings are now called Melechs. Jewish Priesthood is now referred to as the Grand Rabbinate.
+Reform is now a feminist religion
+Anabaptist rulers are no longer able to expel the Jews.
+Jewish Great Holy Wars have been unlocked! The Grand Rebbe can call GHWs as soon as the title is created. Crusade weights have been added to several de jure kingdoms in the Northeast, as well as Florida, Chicagoland, and Carolina.
+A new Jewish religious order has been added - the Shomrim. The Shomrim form soon after (MTTH: 2 months) the creation of the Grand Rabbinate.
+Province setup changed - Yiddish counties in Upstate New York changed to better reflect actual location of Hasidic communities in the area. A county near Montreal has also been made Yiddish/Jewish.
+Jewish rulers have been given new, unique traits and histories.
+Rothschild family now replaces the Longacres rather than Theovelts.
+Added wife for Lazar Rothschild.
+Yiddish name list has been edited slightly.
+Many more titles have been given unique names for rulers of Yiddish culture.
+Probably many more things that I'm forgetting about at the moment.
+
+v0.2a
+Bugfixes:
+Fixed bugs related to Jeish physicians and courtiers
+Yiddish culture now has access to all 4 tiers of the New Yorker Militia building, as well as to New Yorker Militia retinues
+Entire Blumenkrantz family is now Reform instead of Orthodox
+Judaism uses jewishgfx instead of westerngfx
+
+Changes:
+New loading screen added: Jews Praying in the Synagogue on Yom Kippur by Maurycy Gottlieb
+Lazar Rothschild is now Zealous instead of Gregarious. Previously, he would get converted to Americanism by his leige within weeks of game start.
+Shomrim order's size altered so it doesn't get as ridiculously large
+Jewish crusade weights shifted slightly
+Color of Yiddish culture altered slightly to be easier on the eyes.
+Even more titles have unique names for rulers of Yiddish culture. Yiddish Emperors are now known as Keysers, and Yiddish Kings are called Melechs even if they are not Jewish
+Yiddish and Neoladino cultural empires added. Credit to User:Hosmich for the Yiddish flag, User:Zirland for the background of the Neoladino flag (Simple Andalusian flag), and User:Frater5 for the menorah in the Neoladino flag
+
+v0.3
+Bugfixes:
+Jewish rulers now have customizable localization.
+Jewish rulers can no longer get the pig event when taking the rulership focus. I don't know how I missed that the first time around.
+Sympathy for Judaism is properly implemented.
+Jewish physicians are now properly implemented.
+
+Changes:
+El Chupacabra can now terrorize Neoladino provinces.
+Neoladino characters now use Andalusian or Muslim graphical culture.
+Neoladino name list altered to include more Hispanic names and less Yiddish/Anglo names.
+Yiddish name list altered slightly.
+Added three new Jewish artifacts. (Credit to: CK2 team for artifact background images, AtE team for elements used in the Jewish banner, User:An Encore Performance From The Boys In The Band for the flag used in the Jewish banner, and User:Daniel G. for the menorah used in the Golden Menorah image)
+Added new Yiddish and Neoladino cultural retinue: the Maccabees. Essentially the same as the "Jewish Heavy Infantry" from vanilla.
+Added a new Jewish ruler - the Duke of the Leeward Antilles. The islands were conquered by a Neoladino adventurer, who married a local Papiamen convert to Judaism and had one child, who seems to take after his mother more than his father. However, only the island of Curaçao is religiously Jewish, meaning that the duchy faces internal religious conflict on top of the existential threat posed by the Caribbean Empire. (Curaçao is home to the oldest active Jewish congregation in the Americas, and Ladino-speaking Jews fleeing persecution in Brazil settled in Curaçao and influenced the Papiamento language. I also wanted to add a duke-level Jewish ruler in a "remote" part of the map, paralleling the Duchy of Axum from vanilla CK2.)
+Added new Jewish CoAs. (Credit to: User:Gilgamesh for the Star of David emblem, User:An Encore Performance From The Boys In The Band for the Ink Flag-style Star of David emblem, User:Scrumshus for the Shin emblem, User:AnonMoos for the Chai emblem, User:Meul for the Khamsa emblem (plain), User:Madboy74 for the Khamsa emblem (open eye), User:Dan Pelleg for the Shalom emblem, en:User:Cameltrader for the Lion of Judah emblem (taken from the Emblem of Jerusalem), and User:Mushki Brichta for the Shofar emblem.)
+
+TESTING:
+*See if anything got fucked up with the new characters (should be good now)
+*Check to see if artifacts are okay. (fuck it)
+*Check new localization.

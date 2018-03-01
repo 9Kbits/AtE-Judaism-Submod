@@ -1,0 +1,245 @@
+decisions = {
+	become_banker = {
+		potential = {
+			age = 16
+			NOT = { trait = incapable }
+			prisoner = no
+			NOT = { trait = banker }
+			OR = {
+				controls_religion = no			# any secular ruler
+				religion_group = oldworld		# Americanists and Consumerists okay with moneylending
+				religion_group = pagan_group	# reformed pagans also okay with it
+			}
+			OR = {
+				ai = no
+				is_patrician = yes
+				wealth = 500
+				monthly_income = 5
+			}
+		}
+		allow = {
+			wealth = 500
+			OR = {
+				religion = consumerist
+				religion= jewish
+				religion = reform
+				is_patrician = yes
+				stewardship = 12
+				trait = greedy
+				trait = cynical
+			}
+			is_tribal = no
+			is_nomadic = no
+			NOT = { has_character_flag = loan_taken }
+		}
+		effect = {
+			add_trait = banker
+			wealth = -500
+			hidden_tooltip = { set_variable = { which = "years_banking" value = 1 } }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0.01 }
+			modifier = { factor = 2 stewardship = 10 }
+			modifier = { factor = 2 stewardship = 15 }
+			modifier = { factor = 5 trait = greedy }
+			modifier = { factor = 2 trait = cynical	}
+			modifier = { factor = 5	is_patrician = yes }
+			modifier = { factor = 2 wealth = 1000 }
+			modifier = { factor = 3 religion_group = oldworld }
+		}
+	}
+	
+	leave_banking = {
+		potential = {
+			trait = banker
+		}
+		allow = {
+			
+		}
+		effect = {
+			character_event = { id = bank.10 }
+		}
+		revoke_allowed = { always = no }
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0.001 }
+			modifier = { factor = 0.5 wealth = 250 }
+			modifier = { factor = 10 NOT = { wealth = -100 } }
+			modifier = { factor = 10 NOT = { monthly_income = 0 } }
+			modifier = { factor = 5 war = yes }
+		}
+	}
+	
+	borrow_money = {
+		potential = {
+			is_ruler = yes
+			demesne_size = 1
+			OR = {
+				higher_tier_than = baron
+				is_patrician = yes
+			}
+			NOT = { has_character_flag = offended_moneylenders }
+			NOT = { has_character_flag = loan_taken }
+			NOT = { trait = banker }
+		}
+		allow = {
+			NOT = { has_character_modifier = poor_credit }
+			NOT = { has_character_modifier = defaulted_on_loan }
+			NOT = { has_character_modifier = loan_timer }
+		}
+		effect = {
+			set_character_flag = loan_taken
+			#100g loan
+			if = {
+				limit = {
+					NOT = { monthly_income = 5 }
+				}
+				custom_tooltip = { text = loan_100 }
+				set_character_flag = loan_100				
+			}
+			#200g loan
+			if = {
+				limit = {
+					monthly_income = 5
+					NOT = { monthly_income = 10 } 	
+				}
+				custom_tooltip = { text = loan_200 }
+				set_character_flag = loan_200
+			}
+			#400g loan
+			if = {
+				limit = {
+					monthly_income = 10
+					NOT = { monthly_income = 15 } 
+				}
+				custom_tooltip = { text = loan_400 }
+				set_character_flag = loan_400				
+			}
+			#600g loan
+			if = {
+				limit = {
+					monthly_income = 15
+					NOT = { monthly_income = 20 }
+				}
+				custom_tooltip = { text = loan_600 }
+				set_character_flag = loan_600				
+			}
+			#800g loan
+			if = {
+				limit = {
+					monthly_income = 20
+					NOT = { monthly_income = 25 }
+				}
+				custom_tooltip = { text = loan_800 }
+				set_character_flag = loan_800				
+			}			
+			#1000g loan
+			if = {
+				limit = {
+					monthly_income = 25 	
+				}
+				custom_tooltip = { text = loan_1000 }
+				set_character_flag = loan_1000				
+			}
+			hidden_tooltip = { letter_event = { id = bank.1 } }
+		}
+		revoke_allowed = { always = no }
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0.1 }
+			modifier = { factor = 0 war = no }
+			modifier = { factor = 0 wealth = 100 }
+			modifier = { factor = 4 NOT = { wealth = 0 } }
+			modifier = { factor = 4 NOT = { wealth = -100 }	}
+		}
+	}
+	
+	repay_loan = {
+		potential = {
+			has_character_flag = loan_taken
+		}
+		allow = {
+			OR = {
+				AND = {
+					custom_tooltip = {
+						text = loan_amount_100
+						has_character_flag = loan_100
+					}
+					wealth = 125
+				}
+				AND = {
+					custom_tooltip = {
+						text = loan_amount_200
+						has_character_flag = loan_200
+					}
+					wealth = 250
+				}
+				AND = {
+					custom_tooltip = {
+						text = loan_amount_400
+						has_character_flag = loan_400
+					}
+					wealth = 500
+				}
+				AND = {
+					custom_tooltip = {
+						text = loan_amount_600
+						has_character_flag = loan_600
+					}
+					wealth = 750
+				}
+				AND = {
+					custom_tooltip = {
+						text = loan_amount_800
+						has_character_flag = loan_800
+					}
+					wealth = 1000
+				}
+				AND = {
+					custom_tooltip = {
+						text = loan_amount_1000
+						has_character_flag = loan_1000
+					}
+					wealth = 1250
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_character_flag = loan_100 }
+				wealth = -125
+			}
+			if = {
+				limit = { has_character_flag = loan_200 }
+				wealth = -250
+			}
+			if = {
+				limit = { has_character_flag = loan_400 }
+				wealth = -500
+			}
+			if = {
+				limit = { has_character_flag = loan_600 }
+				wealth = -750
+			}
+			if = {
+				limit = { has_character_flag = loan_800 }
+				wealth = -1000
+			}
+			if = {
+				limit = { has_character_flag = loan_1000 }
+				wealth = -1250
+			}
+			clear_banking_flags_effect = yes
+		}
+		revoke_allowed = { always = no }
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0.5 }
+			modifier = { factor = 0 war = yes }
+		}
+	}
+}

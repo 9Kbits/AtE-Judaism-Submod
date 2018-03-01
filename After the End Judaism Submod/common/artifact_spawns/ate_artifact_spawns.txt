@@ -1,0 +1,581 @@
+####################
+#### QUALITY 5  ####
+####################
+
+###################
+#### QUALITY 4 ####
+###################
+
+the_declaration = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = americanist
+			primary_title = {
+				title = d_capital
+			}
+		}
+	}
+
+	artifacts = {
+		the_declaration = { value = 1 }
+	}
+}
+
+divine_egg = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = atomicist
+			primary_title = {
+				title = c_los_alamos
+			}
+		}
+	}
+
+	artifacts = {
+		divine_egg = { value = 1 }
+	}
+}
+
+obsidian_crown = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion_group = mesoamerican_gods
+			primary_title = {
+				title = k_michoacan
+			}
+		}
+	}
+
+	artifacts = {
+		obsidian_crown = { value = 1 }
+	}
+}
+
+crown_lion_judah = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion_group = afro_syncretic
+			primary_title = {
+				title = d_bahama
+			}
+		}
+	}
+
+	artifacts = {
+		crown_lion_judah = { value = 1 }
+	}
+}
+
+ate_salvage_items = {
+	max_amount = 7
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+		}
+	}
+
+	artifacts = {
+		ate_firearm = { value = 1 }
+		ate_calculator = { value = 1 }
+		ate_watch = { value = 1 }
+		ate_typewriter = { value = 1 }
+		ate_telescope = { value = 1 }
+		ate_textbooks = { value = 1 }
+	}
+}
+
+###################
+#### QUALITY 3 ####
+###################
+
+imperial_moloch = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			primary_title = {
+				title = e_california
+			}
+		}
+	}
+
+	artifacts = {
+		imperial_moloch = { value = 1 }
+	}
+}
+
+gachala_skull = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			higher_tier_than = DUKE
+			OR = {
+				religion_group = cult_of_saints
+				religion_group = mesoamerican_gods
+				religion = falling_star
+			}
+		}
+	}
+
+	artifacts = {
+		gachala_skull = { value = 1 }
+	}
+}
+
+st_stanleys_chalice = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			higher_tier_than = DUKE
+			is_tribal = no
+			religion = ursuline
+		}
+	}
+
+	artifacts = {
+		st_stanleys_chalice = { value = 1 }
+	}
+}
+
+thunderbird_whistle = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			is_nomadic = yes
+			religion = ghost_dance
+		}
+	}
+
+	artifacts = {
+		thunderbird_whistle = { value = 1 }
+	}
+}
+
+chacmool_of_mirrors = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			owns = 3113 #Chichen Itza
+		}
+	}
+
+	artifacts = {
+		chacmool_of_mirrors = { value = 1 }
+	}
+}
+
+black_slab = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			owns = 69 # Boston
+		}
+	}
+
+	artifacts = {
+		black_slab = { value = 1 }
+	}
+}
+
+ancient_torah = {
+	max_amount = 3
+	spawn_date = -1.1.1
+	
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion_group = jewish_group
+		}
+	}
+	
+	artifacts = {
+		ancient_torah = { value = 1 }
+	}
+}
+
+###################
+#### QUALITY 2 ####
+###################
+
+old_world_engine = {
+	max_amount = 7
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			OR = {
+				religion = atomicist
+				religion = rust_cultist
+			}
+		}
+	}
+
+	artifacts = {
+		old_world_engine = { value = 1 }
+	}
+}
+
+silver_key = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = occultist
+		}
+	}
+
+	artifacts = {
+		silver_key = { value = 1 }
+	}
+}
+
+living_thyrsus = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			higher_tier_than = COUNT
+			is_tribal = no
+			religion = gaian
+		}
+	}
+
+	artifacts = {
+		living_thyrsus = { value = 1 }
+	}
+}
+
+golden_oscar = {
+	max_amount = 3
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			is_tribal = no
+			religion = cetic
+		}
+	}
+
+	artifacts = {
+		golden_oscar = { value = 1 }
+	}
+}
+
+black_cat_banner = {
+	max_amount = 6
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			higher_tier_than = BARON
+			religion_group = pagan
+		}
+	}
+
+	artifacts = {
+		black_cat_banner = { value = 1 }
+	}
+}
+
+seer_stone = {
+	max_amount = 2
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			is_feudal = yes
+			religion_group = latter_day_saints
+		}
+	}
+
+	artifacts = {
+		seer_stone = { value = 1 }
+	}
+}
+			
+
+jewish_banner = {
+	max_amount = 4
+	spawn_date = -1.1.1
+	
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion_group = jewish_group
+		}
+	}
+	
+	artifacts = {
+		jewish_banner = { value = 1 }
+	}
+}
+
+###################
+#### QUALITY 1 ####
+###################
+
+founder_bust = {
+	max_amount = 8
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			OR = {
+				religion = americanist
+				religion = hamiltonian
+				religion = jeffersonian
+				religion = libertarian
+			}
+		}
+	}
+
+	artifacts = {
+		founder_bust = { value = 1 }
+	}
+}
+
+ancient_bonsai = {
+	max_amount = 5
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = gaian
+		}
+	}
+
+	artifacts = {
+		ancient_bonsai = { value = 1 }
+	}
+}
+
+imperial_writings = {
+	max_amount = 5
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = cetic
+		}
+	}
+
+	artifacts = {
+		imperial_writings = { value = 1 }
+	}
+}
+
+martyrs_ashes = {
+	max_amount = 5
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = revelationist
+		}
+	}
+
+	artifacts = {
+		martyrs_ashes = { value = 1 }
+	}
+}
+
+fallen_star = {
+	max_amount = 5
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = falling_star
+		}
+	}
+
+	artifacts = {
+		fallen_star = { value = 1 }
+	}
+}
+
+sacred_bundle = {
+	max_amount = 8
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion_group = american_native
+		}
+	}
+
+	artifacts = {
+		sacred_bundle = { value = 1 }
+	}
+}
+
+golden_chacmool = {
+	max_amount = 5
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			higher_tier_than = COUNT
+			religion_group = mesoamerican_gods
+		}
+	}
+
+	artifacts = {
+		golden_chacmool = { value = 1 }
+	}
+}
+
+nauvoo_fragment = {
+	max_amount = 4
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			is_feudal = yes
+			religion_group = latter_day_saints
+		}
+	}
+
+	artifacts = {
+		nauvoo_fragment = { value = 1 }
+	}
+}
+
+gris_gris = {
+	max_amount = 6
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+			religion = voodoo
+		}
+	}
+
+	artifacts = {
+		gris_gris = { value = 1 }
+	}
+}
+
+ate_generic_artifacts = {
+	max_amount = 70
+	spawn_date = -1.1.1
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			is_landed = yes
+		}
+	}
+
+	artifacts = {
+		old_world_glass = { value = 5 }
+		old_world_jewelry = { value = 3 }
+		old_world_money = { value = 3 }
+		old_world_musicbox = { value = 3 }
+		monkey_paw = { value = 1 }
+	}
+}
